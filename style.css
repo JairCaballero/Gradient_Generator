@@ -1,0 +1,109 @@
+/* Generales */
+*, *::before, *::after {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  height: 100vh;
+}
+
+/* Contenedor Padre */
+.container {
+  background-color: #fff;
+  width: 400px;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+.container *:not(i) {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Contenedor de Colores */
+.colors {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Iput typo color */
+input[type="color"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 5px;
+  border: none;
+}
+
+/* Contenedor debotones de dirrecion */
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+/* Botones de dirrecion */
+.buttons button {
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border: 2px solid #d5d5dc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons .active {
+  border: none;
+  background-color: #4a6ee0;
+  color: #fff;
+}
+
+/* Botones con icono para rotar */
+.rotate-icon i {
+  transform: rotate(45deg);
+}
+
+/* Output */
+.output {
+  background-color: #f0f2fc;
+}
+
+/* Contenedor del codigo del gradiante */
+#code {
+  padding: 5px;
+  width: 100%;
+  resize: none;
+  color: #30304a;
+  background-color: transparent;
+  min-height: 60px;
+}
+
+/* boton para copiar el codigo */
+#copy {
+  font-size: 14px;
+  background-color: #4a6ee0;
+  color: white;
+  position: relative;
+  left: 85%;
+  bottom: 10px;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
